@@ -785,3 +785,6 @@ $settings['entity_update_batch_size'] = 50;
 # if (file_exists($app_root . '/' . $site_path . '/settings.local.php')) {
 #   include $app_root . '/' . $site_path . '/settings.local.php';
 # }
+if (file_exists('/var/www/site-php')) {
+  require '/var/www/site-php/eemfelton2/eemfelton2-settings.inc';
+}
