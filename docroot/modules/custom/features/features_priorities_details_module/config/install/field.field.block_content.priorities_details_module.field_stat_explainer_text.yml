@@ -1,0 +1,20 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - block_content.type.priorities_details_module
+    - field.storage.block_content.field_stat_explainer_text
+  module:
+    - text
+id: block_content.priorities_details_module.field_stat_explainer_text
+field_name: field_stat_explainer_text
+entity_type: block_content
+bundle: priorities_details_module
+label: 'Explainer Text'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: text

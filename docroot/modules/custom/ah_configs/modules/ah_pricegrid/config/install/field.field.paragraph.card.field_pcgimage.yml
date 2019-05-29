@@ -1,0 +1,30 @@
+langcode: en
+status: true
+dependencies:
+  enforced:
+    module:
+      - ah_pricegrid
+  config:
+    - field.storage.paragraph.field_pcgimage
+    - media.type.image
+    - paragraphs.paragraphs_type.card
+id: paragraph.card.field_pcgimage
+field_name: field_pcgimage
+entity_type: paragraph
+bundle: card
+label: Image
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:media'
+  handler_settings:
+    target_bundles:
+      image: image
+    sort:
+      field: _none
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference

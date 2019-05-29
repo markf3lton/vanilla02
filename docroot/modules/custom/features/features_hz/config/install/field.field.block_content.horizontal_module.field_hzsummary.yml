@@ -1,0 +1,20 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - block_content.type.horizontal_module
+    - field.storage.block_content.field_hzsummary
+  module:
+    - text
+id: block_content.horizontal_module.field_hzsummary
+field_name: field_hzsummary
+entity_type: block_content
+bundle: horizontal_module
+label: Summary
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: text_long

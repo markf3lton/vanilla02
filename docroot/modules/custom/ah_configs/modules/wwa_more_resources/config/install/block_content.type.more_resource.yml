@@ -1,0 +1,10 @@
+langcode: en
+status: true
+dependencies:
+  enforced:
+    module:
+      - wwa_more_resources
+id: more_resource
+label: 'More Resource'
+revision: 1
+description: 'More resource component'

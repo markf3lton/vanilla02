@@ -1,0 +1,7 @@
+langcode: en
+status: true
+dependencies: {  }
+id: priorities_list_points
+label: 'Priorities List Module'
+revision: 1
+description: ''

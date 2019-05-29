@@ -1,0 +1,13 @@
+ah_services.content:
+  route_name: ah_services.content
+  options: 
+    attributes:
+      target: _blank
+  defaults:
+    _controller: '\Drupal\ah_services\Controller\AhServicesController::nodePreview'
+    _title: 'Preview Latest Version'
+  requirements:
+    _permission: 'view latest version'
+  title: 'Preview Latest Version'
+  base_route: entity.node.canonical
+  weight: 100

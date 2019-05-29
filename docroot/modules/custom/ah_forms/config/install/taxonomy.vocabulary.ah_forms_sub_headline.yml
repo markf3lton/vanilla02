@@ -1,0 +1,11 @@
+langcode: en
+status: true
+dependencies:
+  enforced:
+    module:
+      - ah_forms
+name: 'Forms – Subheader Text'
+vid: ah_forms_sub_headline
+description: 'Groups AH forms SubHeadline'
+hierarchy: 0
+weight: 0

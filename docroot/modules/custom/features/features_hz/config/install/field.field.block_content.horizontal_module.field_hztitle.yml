@@ -1,0 +1,20 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - block_content.type.horizontal_module
+    - field.storage.block_content.field_hztitle
+  module:
+    - text
+id: block_content.horizontal_module.field_hztitle
+field_name: field_hztitle
+entity_type: block_content
+bundle: horizontal_module
+label: Title
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: text

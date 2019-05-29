@@ -1,0 +1,11 @@
+langcode: en
+status: true
+dependencies:
+  enforced:
+    module:
+      - ah_forms
+name: 'Forms - Submit Button Labels'
+vid: ah_forms_button_labels
+description: 'Groups AH Forms Button Labels'
+hierarchy: 0
+weight: 0

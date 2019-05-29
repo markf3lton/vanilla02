@@ -1,0 +1,21 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - block_content.type.ah_webform
+    - field.storage.block_content.field_ah_form_name
+  enforced:
+    module:
+      - ah_webform
+id: block_content.ah_webform.field_ah_form_name
+field_name: field_ah_form_name
+entity_type: block_content
+bundle: ah_webform
+label: 'Form Name'
+description: 'This is the administrative title, as well as the name attribute in the form HTML that will be passed to Eloqua as the form name and Adobe Analytics as the form name attribute.'
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

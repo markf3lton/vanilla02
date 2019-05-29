@@ -1,0 +1,45 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - block_content.type.hero_content_block
+    - field.storage.block_content.field_hero_content_block
+    - paragraphs.paragraphs_type.advanced_hero_content_block
+  module:
+    - entity_reference_revisions
+  enforced:
+    module:
+      - ah_hero_content_block
+id: block_content.hero_content_block.field_hero_content_block
+field_name: field_hero_content_block
+entity_type: block_content
+bundle: hero_content_block
+label: 'Hero Content Block'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:paragraph'
+  handler_settings:
+    negate: 0
+    target_bundles:
+      advanced_hero_content_block: advanced_hero_content_block
+    target_bundles_drag_drop:
+      advanced_hero_content_block:
+        enabled: true
+        weight: 6
+      article_highlights:
+        weight: 7
+        enabled: false
+      case_study_icons:
+        weight: 8
+        enabled: false
+      onepager:
+        weight: 9
+        enabled: false
+      wwa_hero_content_blocks:
+        weight: 10
+        enabled: false
+field_type: entity_reference_revisions

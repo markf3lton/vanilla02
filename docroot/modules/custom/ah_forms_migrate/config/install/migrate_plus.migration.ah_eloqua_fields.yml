@@ -1,0 +1,38 @@
+id: ah_eloqua_fields
+label: Eloqua Tasking Dictionaries (Taxonomy Vocabulary).
+migration_group: ah_forms
+migration_tags:
+  - ah_eloqua_fields
+dependencies:
+  enforced:
+    module:
+      - ah_forms_migrate
+source:
+  plugin: csv
+  path: 'public://import/ah_forms/ah_eloqua_fields.csv'
+  header_row_count: 1
+  keys:
+    - id
+  fields:
+    id: Unique identifier for the data source.
+    name: Name of the taxonomy term.
+    description: Description of the taxonomy term.
+    dict_field_sets_first: Eloqua Field Sets Key.
+    dict_field_sets_second: Eloqua Field Sets Value.
+    alias: Url alias of the taxonomy term.
+  constants:
+    slash: '/'
+process:
+  name: name
+  description/value: description
+  description/format: constants/restricted_html
+  field_eloqua_field_sets/first: dict_field_sets_first
+  field_eloqua_field_sets/second: dict_field_sets_second
+  path:
+    plugin: concat
+    source:
+     - constants/slash
+     - alias
+destination:
+  plugin: 'entity:taxonomy_term'
+  default_bundle: ah_eloqua_fields

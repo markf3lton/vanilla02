@@ -1,0 +1,13 @@
+services:
+  ahd_html_response.subscriber:
+    class: Drupal\ahd_custom\EventSubscriber\HtmlResponseSubscriber
+    tags:
+      - { name: event_subscriber }
+    arguments: []
+  # ahd_alter_entity_autocomplete.route_subscriber:
+  #   class: Drupal\ahd_custom\Routing\AutocompleteRouteSubscriber
+  #   tags:
+  #     - { name: event_subscriber }
+  # ahd_alter_entity_autocomplete.autocomplete_matcher:
+  #   class: Drupal\ahd_custom\AutocompleteMatcher\EntityAutocompleteMatcher
+  #   arguments: ['@plugin.manager.entity_reference_selection']

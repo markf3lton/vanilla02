@@ -1,0 +1,21 @@
+langcode: en
+status: true
+dependencies:
+  enforced:
+    module:
+      - ah_pricegrid
+  config:
+    - block_content.type.pricing_card_grid
+    - field.storage.block_content.field_cta_text
+id: block_content.pricing_card_grid.field_cta_text
+field_name: field_cta_text
+entity_type: block_content
+bundle: pricing_card_grid
+label: 'CTA Text'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

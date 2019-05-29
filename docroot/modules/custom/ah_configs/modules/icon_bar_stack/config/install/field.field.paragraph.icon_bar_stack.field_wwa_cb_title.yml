@@ -1,0 +1,21 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_wwa_cb_title
+    - paragraphs.paragraphs_type.icon_bar_stack
+  enforced:
+    module:
+      - icon_bar_stack
+id: paragraph.icon_bar_stack.field_wwa_cb_title
+field_name: field_wwa_cb_title
+entity_type: paragraph
+bundle: icon_bar_stack
+label: 'Icon Bar Title'
+description: ''
+required: true
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

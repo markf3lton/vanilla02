@@ -1,0 +1,26 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - block_content.type.tab_module
+    - field.field.block_content.tab_module.field_tabs
+  module:
+    - entity_reference_revisions
+  enforced:
+    module:
+      - ah_tabs
+id: block_content.tab_module.default
+targetEntityType: block_content
+bundle: tab_module
+mode: default
+content:
+  field_tabs:
+    type: entity_reference_revisions_entity_view
+    weight: 0
+    label: above
+    settings:
+      view_mode: default
+      link: ''
+    third_party_settings: {  }
+    region: content
+hidden: {  }

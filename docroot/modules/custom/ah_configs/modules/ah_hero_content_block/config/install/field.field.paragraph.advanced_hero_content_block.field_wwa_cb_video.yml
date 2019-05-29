@@ -1,0 +1,27 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_wwa_cb_video
+    - paragraphs.paragraphs_type.advanced_hero_content_block
+  enforced:
+    module:
+      - ah_hero_content_block
+id: paragraph.advanced_hero_content_block.field_wwa_cb_video
+field_name: field_wwa_cb_video
+entity_type: paragraph
+bundle: advanced_hero_content_block
+label: 'Search for Video '
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:brightcove_by_name_id'
+  handler_settings:
+    target_bundles: null
+    sort:
+      field: _none
+    auto_create: false
+field_type: entity_reference

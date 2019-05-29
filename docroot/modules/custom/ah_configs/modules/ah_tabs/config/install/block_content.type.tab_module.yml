@@ -1,0 +1,10 @@
+langcode: en
+status: true
+dependencies:
+  enforced:
+    module:
+      - ah_tabs
+id: tab_module
+label: 'Tab Module'
+revision: 1
+description: 'Tabs module component for tabs UI.'

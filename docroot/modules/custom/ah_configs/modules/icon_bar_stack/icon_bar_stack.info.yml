@@ -1,0 +1,5 @@
+name: 'Icon Bar Stack - Configurations'
+type: module
+description: 'Module to install or update Icon Bar Stack - Configurations.'
+core: 8.x
+package: Ah Configurations

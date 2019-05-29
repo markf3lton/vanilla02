@@ -1,0 +1,20 @@
+<?php
+use Drupal\field\Entity\FieldStorageConfig;
+use Drupal\field\Entity\FieldConfig;
+use Drupal\Core\Serialization\Yaml;
+
+/**
+ * Add new icon link field to Case study or More resource paragraph.
+ */
+function wwa_more_resources_update_8001() {
+  // Install new fields.
+  $module_path = drupal_get_path('module', 'wwa_more_resources');
+  $yml = Yaml::decode(file_get_contents($module_path . '/config/install/field.storage.paragraph.field_icon_link.yml'));
+  if (!FieldStorageConfig::loadByName($yml['entity_type'], $yml['field_name'])) {
+    FieldStorageConfig::create($yml)->save();
+  }
+  $yml = Yaml::decode(file_get_contents($module_path . '/config/install/field.field.paragraph.case_study_icons.field_icon_link.yml'));
+  if (!FieldConfig::loadByName($yml['entity_type'], $yml['bundle'], $yml['field_name'])) {
+    FieldConfig::create($yml)->save();
+  }
+}

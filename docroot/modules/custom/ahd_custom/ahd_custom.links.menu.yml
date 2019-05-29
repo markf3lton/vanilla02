@@ -1,0 +1,12 @@
+ahd.admin:
+  title: 'athenahealth custom module settings'
+  description: 'Implements ahcom custom admin settings page link'
+  parent: system.admin_config_development
+  route_name: ahd.content
+  weight: 100
+ahd_custom.admin_settings_form:
+  title: 'athenahealth custom configuration' 
+  route_name: ahd_custom.admin_settings_form
+  description: 'Implements custom configuration settings'
+  parent: system.admin_config_system
+  weight: 99

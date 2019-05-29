@@ -1,0 +1,11 @@
+langcode: en
+status: true
+dependencies:
+  enforced:
+    module:
+      - ah_forms
+name: 'Forms - Eloqua Tasking Dictionaries'
+vid: ah_eloqua_fields
+description: 'Groups all Eloqua Fields items.'
+hierarchy: 0
+weight: 0

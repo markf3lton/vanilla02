@@ -1,0 +1,64 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.icon_bar_stack.field_gif
+    - field.field.paragraph.icon_bar_stack.field_icon_link
+    - field.field.paragraph.icon_bar_stack.field_wwa_cb_title
+    - paragraphs.paragraphs_type.icon_bar_stack
+  enforced:
+    module:
+      - icon_bar_stack
+  module:
+    - field_group
+    - media_library
+third_party_settings:
+  field_group:
+    group_icon_bar:
+      children:
+        - field_gif
+        - field_icon_link
+        - field_wwa_cb_title
+      parent_name: ''
+      weight: 0
+      format_type: fieldset
+      format_settings:
+        id: ''
+        classes: ''
+        description: ''
+        required_fields: false
+      label: 'Icon Bar'
+      region: content
+_core:
+  default_config_hash: zuov2BvlhD1wqePVjHNf8eULHEs0aguFwg8v9hyoIJY
+id: paragraph.icon_bar_stack.default
+targetEntityType: paragraph
+bundle: icon_bar_stack
+mode: default
+content:
+  field_gif:
+    weight: 1
+    settings: {  }
+    third_party_settings: {  }
+    type: media_library_widget
+    region: content
+  field_icon_link:
+    weight: 2
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: string_textfield
+    region: content
+  field_wwa_cb_title:
+    weight: 3
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: string_textfield
+    region: content
+hidden:
+  created: true
+  status: true
+  uid: true

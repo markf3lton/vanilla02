@@ -1,0 +1,10 @@
+langcode: en
+status: true
+dependencies:
+  enforced:
+    module:
+      - wwa_cb
+id: wwa_content_blocks
+label: 'Content Blocks'
+revision: 1
+description: 'Content Blocks for who we are pages.'

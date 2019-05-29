@@ -1,0 +1,5 @@
+name: 'Contact Us Configurations'
+type: module
+description: 'Module to install or update `Contact Us` configurations.'
+core: 8.x
+package: Ah Configurations

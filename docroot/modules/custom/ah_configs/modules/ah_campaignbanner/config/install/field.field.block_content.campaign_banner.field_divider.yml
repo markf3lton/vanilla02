@@ -1,0 +1,25 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - block_content.type.campaign_banner
+    - field.storage.block_content.field_divider
+  enforced:
+    module:
+      - ah_campaignbanner
+id: block_content.content_block.field_divider
+field_name: field_divider
+entity_type: block_content
+bundle: campaign_banner
+label: Enable Divider
+description: ''
+required: false
+translatable: false
+default_value:
+  -
+    value: 0
+default_value_callback: ''
+settings:
+  on_label: 'On'
+  off_label: 'Off'
+field_type: boolean

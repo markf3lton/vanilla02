@@ -1,0 +1,21 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.taxonomy_term.field_ah_forms_elq_des
+    - taxonomy.vocabulary.ah_eloqua_tasks
+  enforced:
+    module:
+      - ah_forms
+id: taxonomy_term.ah_eloqua_tasks.field_ah_forms_elq_des
+field_name: field_ah_forms_elq_des
+entity_type: taxonomy_term
+bundle: ah_eloqua_tasks
+label: Description
+description: 'Task Description'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string_long

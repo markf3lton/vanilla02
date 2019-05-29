@@ -1,0 +1,23 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.taxonomy_term.field_ah_forms_qualified_nurture
+    - taxonomy.vocabulary.ah_eloqua_tasks
+  module:
+    - options
+  enforced:
+    module:
+      - ah_forms
+id: taxonomy_term.ah_eloqua_tasks.field_ah_forms_qualified_nurture
+field_name: field_ah_forms_qualified_nurture
+entity_type: taxonomy_term
+bundle: ah_eloqua_tasks
+label: 'Qualified for Nurture'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: list_string

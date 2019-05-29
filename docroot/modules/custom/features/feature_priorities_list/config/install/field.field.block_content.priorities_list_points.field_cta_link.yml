@@ -1,0 +1,22 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - block_content.type.priorities_list_points
+    - field.storage.block_content.field_cta_link
+  module:
+    - link
+id: block_content.priorities_list_points.field_cta_link
+field_name: field_cta_link
+entity_type: block_content
+bundle: priorities_list_points
+label: 'CTA Link'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  link_type: 17
+  title: 1
+field_type: link

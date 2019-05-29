@@ -1,0 +1,87 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.taxonomy_term.ah_eloqua_tasks.field_ah_forms_elq_des
+    - field.field.taxonomy_term.ah_eloqua_tasks.field_ah_forms_elq_email_flag
+    - field.field.taxonomy_term.ah_eloqua_tasks.field_ah_forms_elq_sub
+    - field.field.taxonomy_term.ah_eloqua_tasks.field_ah_forms_qualified_nurture
+    - field.field.taxonomy_term.ah_eloqua_tasks.field_ah_forms_task_priority
+    - field.field.taxonomy_term.ah_eloqua_tasks.field_ah_forms_term_const
+    - taxonomy.vocabulary.ah_eloqua_tasks
+  module:
+    - double_field
+    - options
+    - text
+  enforced:
+    module:
+      - ah_forms
+id: taxonomy_term.ah_eloqua_tasks.default
+targetEntityType: taxonomy_term
+bundle: ah_eloqua_tasks
+mode: default
+content:
+  description:
+    label: hidden
+    type: text_default
+    weight: 0
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+  field_ah_forms_elq_des:
+    weight: 2
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    type: basic_string
+    region: content
+  field_ah_forms_elq_email_flag:
+    weight: 5
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    type: list_default
+    region: content
+  field_ah_forms_elq_sub:
+    weight: 1
+    label: above
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    type: string
+    region: content
+  field_ah_forms_qualified_nurture:
+    weight: 4
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    type: list_default
+    region: content
+  field_ah_forms_task_priority:
+    weight: 3
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    type: list_default
+    region: content
+  field_ah_forms_term_const:
+    weight: 6
+    label: above
+    settings:
+      inline: true
+      first:
+        prefix: 'Eloqua/LDT Field Key'
+        suffix: ''
+        link: false
+        format_type: medium
+        hidden: false
+      second:
+        prefix: 'Eloqua/LDT Field Value'
+        suffix: ''
+        link: false
+        format_type: medium
+        hidden: false
+    third_party_settings: {  }
+    type: double_field_unformatted_list
+    region: content
+hidden: {  }

@@ -1,0 +1,219 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - block_content.type.wwa_banner
+    - entity_browser.browser.image_browser
+    - field.field.block_content.wwa_banner.body
+    - field.field.block_content.wwa_banner.field_backgrou
+    - field.field.block_content.wwa_banner.field_backgroundcolor
+    - field.field.block_content.wwa_banner.field_banner_background
+    - field.field.block_content.wwa_banner.field_down_arrow_color
+    - field.field.block_content.wwa_banner.field_enable_down_arrow_animatio
+    - field.field.block_content.wwa_banner.field_enable_title_divider
+    - field.field.block_content.wwa_banner.field_mobile_background_image
+    - field.field.block_content.wwa_banner.field_sub_title
+    - field.field.block_content.wwa_banner.field_title
+    - field.field.block_content.wwa_banner.field_title_color
+    - field.field.block_content.wwa_banner.field_title_divider_color
+  module:
+    - color_field
+    - conditional_fields
+    - content_moderation
+    - entity_browser
+    - text
+  enforced:
+    module:
+      - wwa
+id: block_content.wwa_banner.default
+targetEntityType: block_content
+bundle: wwa_banner
+mode: default
+content:
+  body:
+    type: text_textarea_with_summary
+    weight: 4
+    settings:
+      rows: 9
+      summary_rows: 3
+      placeholder: ''
+    third_party_settings: {  }
+    region: content
+  field_backgrou:
+    type: entity_browser_file
+    weight: 8
+    settings:
+      entity_browser: image_browser
+      field_widget_edit: true
+      field_widget_remove: true
+      view_mode: default
+      preview_image_style: thumbnail
+      open: true
+      field_widget_replace: false
+      selection_mode: selection_append
+    region: content
+    third_party_settings:
+      conditional_fields:
+        e902a28d-720d-4664-b64b-7dae25239865:
+          dependee: field_banner_background
+          settings:
+            state: visible
+            condition: value
+            grouping: AND
+            values_set: 1
+            value: ''
+            values: {  }
+            value_form:
+              -
+                value: image
+            effect: show
+            effect_options: {  }
+            selector: ''
+          entity_type: block_content
+          bundle: wwa_banner
+  field_backgroundcolor:
+    weight: 10
+    settings:
+      default_colors: '#582C83,#0093B2,#0F8A07,#000000,#7A9A01,#B7BF10,#62BB46,#666666,#9E9E9E,#A50050,#D8D8D8,#F4F4F4,#F73F3F,#FFFFFF,#FDF3F3,#F8F8F8'
+    third_party_settings:
+      conditional_fields:
+        83e688cb-45c6-4870-8160-ef6881ce4bf7:
+          dependee: field_banner_background
+          settings:
+            state: visible
+            condition: value
+            grouping: AND
+            values_set: 1
+            value: ''
+            values: {  }
+            value_form:
+              -
+                value: color
+            effect: show
+            effect_options: {  }
+            selector: ''
+          entity_type: block_content
+          bundle: wwa_banner
+    type: color_field_widget_box
+    region: content
+  field_banner_background:
+    weight: 7
+    settings: {  }
+    third_party_settings: {  }
+    type: options_select
+    region: content
+  field_down_arrow_color:
+    weight: 12
+    settings:
+      default_colors: '#582C83,#0093B2,#0F8A07,#000000,#7A9A01,#B7BF10,#62BB46,#666666,#9E9E9E,#A50050,#D8D8D8,#F4F4F4,#F73F3F,#FFFFFF,#FDF3F3,#F8F8F8'
+    third_party_settings: {  }
+    type: color_field_widget_box
+    region: content
+  field_enable_down_arrow_animatio:
+    weight: 11
+    settings:
+      display_label: true
+    third_party_settings: {  }
+    type: boolean_checkbox
+    region: content
+  field_enable_title_divider:
+    weight: 5
+    settings:
+      display_label: true
+    third_party_settings: {  }
+    type: boolean_checkbox
+    region: content
+  field_mobile_background_image:
+    type: entity_browser_file
+    weight: 9
+    settings:
+      entity_browser: image_browser
+      field_widget_edit: true
+      field_widget_remove: true
+      view_mode: default
+      preview_image_style: thumbnail
+      open: true
+      field_widget_replace: false
+      selection_mode: selection_append
+    region: content
+    third_party_settings:
+      conditional_fields:
+        e5eee0c4-3976-4d73-afa8-744721e14293:
+          dependee: field_banner_background
+          settings:
+            state: visible
+            condition: value
+            grouping: AND
+            values_set: 1
+            value: ''
+            values: {  }
+            value_form:
+              -
+                value: image
+            effect: show
+            effect_options: {  }
+            selector: ''
+          entity_type: block_content
+          bundle: wwa_banner
+  field_sub_title:
+    weight: 3
+    settings:
+      rows: 5
+      placeholder: ''
+    third_party_settings: {  }
+    type: text_textarea
+    region: content
+  field_title:
+    weight: 1
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: text_textfield
+    region: content
+  field_title_color:
+    weight: 2
+    settings:
+      default_colors: '#582C83,#0093B2,#0F8A07,#000000,#7A9A01,#B7BF10,#62BB46,#666666,#9E9E9E,#A50050,#D8D8D8,#F4F4F4,#F73F3F,#FFFFFF,#FDF3F3,#F8F8F8'
+    third_party_settings: {  }
+    type: color_field_widget_box
+    region: content
+  field_title_divider_color:
+    weight: 6
+    settings:
+      default_colors: '#582C83,#0093B2,#0F8A07,#000000,#7A9A01,#B7BF10,#62BB46,#666666,#9E9E9E,#A50050,#D8D8D8,#F4F4F4,#F73F3F,#FFFFFF,#FDF3F3,#F8F8F8'
+    third_party_settings:
+      conditional_fields:
+        9dcaeb3c-1321-47a0-a5ed-442701e0449f:
+          dependee: field_enable_title_divider
+          settings:
+            state: visible
+            condition: checked
+            grouping: AND
+            values_set: 1
+            value: ''
+            values: {  }
+            value_form:
+              value: false
+            effect: show
+            effect_options: {  }
+            selector: ''
+          entity_type: block_content
+          bundle: wwa_banner
+    type: color_field_widget_box
+    region: content
+  info:
+    type: string_textfield
+    weight: 0
+    region: content
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+  moderation_state:
+    type: moderation_state_default
+    weight: 13
+    settings: {  }
+    region: content
+    third_party_settings: {  }
+hidden: {  }

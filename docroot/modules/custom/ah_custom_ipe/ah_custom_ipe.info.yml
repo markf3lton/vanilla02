@@ -1,0 +1,7 @@
+name: 'Athena Restructing IPE Components Tray'
+type: module
+description: 'For content editor, components can be classified as reusable. And in Panels IPE tray only components classified as reuseable will be listed out.'
+core: 8.x
+package: 'Custom'
+dependencies:
+  - panels_ipe

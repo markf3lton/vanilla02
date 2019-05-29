@@ -1,0 +1,35 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_block_content_cta_button_s
+    - paragraphs.paragraphs_type.advanced_hero_content_block
+    - taxonomy.vocabulary.cta
+  content:
+    - 'taxonomy_term:cta:92509c33-5598-4c68-a3cb-515f0b6d0296'
+  enforced:
+    module:
+      - ah_hero_content_block
+id: paragraph.advanced_hero_content_block.field_block_content_cta_button_s
+field_name: field_block_content_cta_button_s
+entity_type: paragraph
+bundle: advanced_hero_content_block
+label: 'Block Content CTA Button Style'
+description: ''
+required: false
+translatable: false
+default_value:
+  -
+    target_uuid: 92509c33-5598-4c68-a3cb-515f0b6d0296
+default_value_callback: ''
+settings:
+  handler: 'default:taxonomy_term'
+  handler_settings:
+    target_bundles:
+      cta: cta
+    sort:
+      field: name
+      direction: asc
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference

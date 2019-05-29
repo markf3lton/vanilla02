@@ -1,0 +1,10 @@
+langcode: en
+status: true
+dependencies:
+  enforced:
+    module:
+      - ah_pricegrid
+id: pricing_card_grid
+label: 'Pricing Card Grid'
+revision: 1
+description: ''

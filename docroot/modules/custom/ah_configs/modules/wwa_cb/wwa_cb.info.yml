@@ -1,0 +1,5 @@
+name: 'Content Block Configurations'
+type: module
+description: 'Module to install or update `content block` configurations.'
+core: 8.x
+package: Ah Configurations

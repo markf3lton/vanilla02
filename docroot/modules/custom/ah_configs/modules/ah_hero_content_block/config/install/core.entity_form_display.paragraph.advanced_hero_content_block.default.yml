@@ -1,0 +1,251 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - entity_browser.browser.media_browser
+    - field.field.paragraph.advanced_hero_content_block.field_article_highlights_title
+    - field.field.paragraph.advanced_hero_content_block.field_block_content_cta_button
+    - field.field.paragraph.advanced_hero_content_block.field_block_content_cta_button_s
+    - field.field.paragraph.advanced_hero_content_block.field_content
+    - field.field.paragraph.advanced_hero_content_block.field_hero_content_block_bg
+    - field.field.paragraph.advanced_hero_content_block.field_content_horizontal_align
+    - field.field.paragraph.advanced_hero_content_block.field_content_vertical_align
+    - field.field.paragraph.advanced_hero_content_block.field_cta_brightcove_video
+    - field.field.paragraph.advanced_hero_content_block.field_image
+    - field.field.paragraph.advanced_hero_content_block.field_img
+    - field.field.paragraph.advanced_hero_content_block.field_subtitle
+    - field.field.paragraph.advanced_hero_content_block.field_subtitle_color
+    - field.field.paragraph.advanced_hero_content_block.field_wwa_cb_is_video
+    - field.field.paragraph.advanced_hero_content_block.field_wwa_cb_title
+    - field.field.paragraph.advanced_hero_content_block.field_wwa_cb_title_color
+    - field.field.paragraph.advanced_hero_content_block.field_wwa_cb_video
+    - paragraphs.paragraphs_type.advanced_hero_content_block
+  module:
+    - color_field
+    - entity_browser
+    - field_group
+    - link
+    - text
+  enforced:
+    module:
+      - ah_hero_content_block
+third_party_settings:
+  field_group:
+    group_title:
+      children:
+        - field_wwa_cb_title
+        - field_wwa_cb_title_color
+      parent_name: ''
+      weight: 3
+      format_type: fieldset
+      format_settings:
+        id: ''
+        classes: ''
+        description: ''
+        required_fields: false
+      label: Title
+      region: content
+    group_image:
+      children:
+        - field_image
+        - field_img
+      parent_name: ''
+      weight: 6
+      format_type: fieldset
+      format_settings:
+        id: ''
+        classes: ''
+        description: ''
+        required_fields: false
+      label: Image
+      region: content
+    group_video:
+      children:
+        - field_wwa_cb_is_video
+        - field_wwa_cb_video
+      parent_name: ''
+      weight: 7
+      format_type: fieldset
+      format_settings:
+        id: ''
+        classes: ''
+        description: ''
+        required_fields: false
+      label: Video
+      region: content
+    group_cta:
+      children:
+        - field_article_highlights_title
+        - field_block_content_cta_button
+        - field_block_content_cta_button_s
+        - field_cta_brightcove_video
+      parent_name: ''
+      weight: 8
+      format_type: fieldset
+      format_settings:
+        id: ''
+        classes: ''
+        description: ''
+        required_fields: false
+      label: CTA
+      region: content
+    group_subtitle:
+      children:
+        - field_subtitle
+        - field_subtitle_color
+      parent_name: ''
+      weight: 4
+      format_type: fieldset
+      format_settings:
+        id: ''
+        classes: ''
+        effect: none
+        formatter: closed
+        description: ''
+        required_fields: true
+      label: Subtitle
+      region: content
+id: paragraph.advanced_hero_content_block.default
+targetEntityType: paragraph
+bundle: advanced_hero_content_block
+mode: default
+content:
+  field_article_highlights_title:
+    weight: 6
+    settings:
+      rows: 9
+      summary_rows: 3
+      placeholder: ''
+    third_party_settings: {  }
+    type: text_textarea_with_summary
+    region: content
+  field_block_content_cta_button:
+    weight: 7
+    settings:
+      placeholder_url: ''
+      placeholder_title: ''
+    third_party_settings: {  }
+    type: link_default
+    region: content
+  field_block_content_cta_button_s:
+    weight: 8
+    settings: {  }
+    third_party_settings: {  }
+    type: options_select
+    region: content
+  field_content:
+    weight: 5
+    settings:
+      rows: 5
+      placeholder: ''
+    third_party_settings: {  }
+    type: text_textarea
+    region: content
+  field_hero_content_block_bg:
+    weight: 0
+    settings:
+      default_colors: '#582C83,#000000,#FFFFFF,#F8F8F8,#F4F4F4,#D8D8D8,#B7BF10,#7A9A01,#0093B2,#A50050,#9E9E9E,#666666,#62BB46,#F73F3F'
+    third_party_settings: {  }
+    type: color_field_widget_box
+    region: content
+  field_content_horizontal_align:
+    weight: 1
+    settings: {  }
+    third_party_settings: {  }
+    type: options_select
+    region: content
+  field_content_vertical_align:
+    weight: 2
+    settings: {  }
+    third_party_settings: {  }
+    type: options_select
+    region: content
+  field_cta_brightcove_video:
+    weight: 9
+    settings:
+      match_operator: CONTAINS
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: entity_reference_autocomplete
+    region: content
+  field_image:
+    type: entity_browser_entity_reference
+    weight: 4
+    settings:
+      entity_browser: media_browser
+      field_widget_display: rendered_entity
+      field_widget_edit: true
+      field_widget_remove: true
+      selection_mode: selection_append
+      field_widget_display_settings:
+        view_mode: thumbnail
+      field_widget_replace: false
+      open: false
+    region: content
+    third_party_settings: {  }
+  field_img:
+    type: entity_browser_entity_reference
+    weight: 5
+    settings:
+      entity_browser: media_browser
+      field_widget_display: rendered_entity
+      field_widget_edit: true
+      field_widget_remove: true
+      selection_mode: selection_append
+      field_widget_display_settings:
+        view_mode: thumbnail
+      field_widget_replace: false
+      open: false
+    region: content
+    third_party_settings: {  }
+  field_subtitle:
+    weight: 9
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: string_textfield
+    region: content
+  field_subtitle_color:
+    weight: 10
+    settings:
+      default_colors: '#582C83,#000000,#FFFFFF,#F8F8F8,#F4F4F4,#D8D8D8,#B7BF10,#7A9A01,#0093B2,#A50050,#9E9E9E,#666666,#62BB46,#F73F3F'
+    third_party_settings: {  }
+    type: color_field_widget_box
+    region: content
+  field_wwa_cb_is_video:
+    weight: 5
+    settings:
+      display_label: true
+    third_party_settings: {  }
+    type: boolean_checkbox
+    region: content
+  field_wwa_cb_title:
+    weight: 2
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: string_textfield
+    region: content
+  field_wwa_cb_title_color:
+    weight: 3
+    settings:
+      default_colors: '#582C83,#000000,#FFFFFF,#F8F8F8,#F4F4F4,#D8D8D8,#B7BF10,#7A9A01,#0093B2,#A50050,#9E9E9E,#666666,#62BB46,#F73F3F'
+    third_party_settings: {  }
+    type: color_field_widget_box
+    region: content
+  field_wwa_cb_video:
+    weight: 6
+    settings:
+      match_operator: CONTAINS
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: entity_reference_autocomplete
+    region: content
+hidden:
+  created: true
+  status: true
+  uid: true

@@ -1,0 +1,21 @@
+id,name,description,alias
+1,CoordinatorCoreThankyou_msg,"<p>Thank you for signing up for our athenaCoordinator Core service. We are excited that you have decided to partner with us to streamline the patient care experience and improve interoperability. &nbsp;<br />
+<br />
+If you are NEW to athenaCoordinator Core, please<strong> <a href='http://athenahealth.com/system/files/athenacoordinator_universal_data_collection.xls'>download</a></strong> and complete the Universal Data Collection form so that we can setup your users and activate your locations In-Network. <strong><a href='mailto:CoordinatorInfo@athenahealth.com'>Email</a></strong> it to us and we will have your Portal live live in 3-5 business days. Someone from the Strategic Partner Team will contact you.<br />
+<br />
+<i>(*Note that this is separate from any interface project implementation process.)</i><br />
+<br />
+View or print <strong><a href='https://www.athenahealth.com/system/files/athenahealth_msa_terms_and_conditions_from_coordinator_core_click_through_agreement_dec2017.pdf' target='_blank'>Terms and Conditions.</a></strong><br />
+<br />
+If you are an existing athenaCoordinator Core client and have received this email as a result of re-contracting, thank you for your continued partnership in making healthcare work as it should. No further action is necessary. However, we do encourage you to log in to your <strong><a href='https://athenanet.athenahealth.com '>athenaCoordinator Portal</a></strong> to verify your location listings* in athenaNet and confirm the accuracy of your users**. If you should have any questions or need to make changes, please <strong><a href='mailto:CoordinatorInfo@athenahealth.com'>email</a></strong> the Strategic Partner Team.<br />
+<br />
+*To access your Location Listings, go to Reports &gt; Coordinator Reports &gt; Organization’s List of Clinical Providers<br />
+<br />
+**If you are the User Admin for your organization, you can review your Portal users by clicking the Gear in the header of your Portal &gt; User (under Admin column) &gt; Users (left menu bar) &gt; Click Search. If you are not the User Admin but need to make changes, please <strong><a href='mailto:CoordinatorInfo@athenahealth.com'>email</a></strong> us.<br />
+<br />
+Welcome to enhanced ordering and improved connectivity.</p>
+",forms-thank-you-message-body-text/coordinatorcorethankyoumsg
+2,FaxReportingThankyou_msg,"<p>Thank you for providing information about the document you received. Your assistance will help to ensure that it reaches the correct destination. As stated on the fax, the document may contain legally privileged health information that may only be used by the intended recipient. Any disclosure or other use of this privileged health information is prohibited by law.</p><div><br>
+Additional questions for us? Call <avayaelement class='contentWrapper' contenteditable='false'><avayaelement class='dcelink' contenteditable='false' id='dceLink-2' originaltext='1-888-482-8436'>1-888-482-8436</avayaelement></avayaelement><span>&nbsp;</span>.</div>
+",forms-thank-you-message-body-text/faxreportingthankyoumsg
+3,"In the meantime, please feel free to give us a call at 800.981.5084","In the meantime, please feel free to give us a call at 800.981.5084, explore the site or check out a video.",forms-thank-you-message-body-text/meantime-please-feel-free-give-us-call-8009815084

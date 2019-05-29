@@ -1,0 +1,24 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - block_content.type.wwa_banner
+    - field.storage.block_content.field_title_color
+  module:
+    - color_field
+  enforced:
+    module:
+      - wwa
+id: block_content.wwa_banner.field_title_color
+field_name: field_title_color
+entity_type: block_content
+bundle: wwa_banner
+label: 'Title Color'
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  opacity: 0
+field_type: color_field_type

@@ -1,0 +1,21 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - block_content.type.priorities_list_points
+    - field.storage.block_content.field_text_color
+  module:
+    - color_field
+id: block_content.priorities_list_points.field_text_color
+field_name: field_text_color
+entity_type: block_content
+bundle: priorities_list_points
+label: 'List Bullet Color'
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  opacity: 1
+field_type: color_field_type

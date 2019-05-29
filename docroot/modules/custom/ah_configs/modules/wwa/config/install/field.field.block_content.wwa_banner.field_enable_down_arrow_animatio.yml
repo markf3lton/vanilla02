@@ -1,0 +1,25 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - block_content.type.wwa_banner
+    - field.storage.block_content.field_enable_down_arrow_animatio
+  enforced:
+    module:
+      - wwa
+id: block_content.wwa_banner.field_enable_down_arrow_animatio
+field_name: field_enable_down_arrow_animatio
+entity_type: block_content
+bundle: wwa_banner
+label: 'Enable down arrow animation'
+description: ''
+required: false
+translatable: false
+default_value:
+  -
+    value: 1
+default_value_callback: ''
+settings:
+  on_label: 'On'
+  off_label: 'Off'
+field_type: boolean

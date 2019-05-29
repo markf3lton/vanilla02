@@ -1,0 +1,15 @@
+name: 'Features Priorities Details Module'
+description: 'Priorities Details Module and Service Statistic Module module details'
+type: module
+core: 8.x
+dependencies:
+  - block_content
+  - color_field
+  - datetime
+  - entity_browser
+  - field
+  - media
+  - options
+  - taxonomy
+  - text
+version: 8.x-1.0

@@ -1,0 +1,83 @@
+<?php
+
+use Drupal\Core\Asset\AttachedAssetsInterface;
+use Drupal\Core\Entity\EntityInterface;
+use Drupal\Core\Entity\EntityTypeInterface;
+use Drupal\Core\Field\BaseFieldDefinition;
+
+/**
+ * Implements hook_entity_base_field_info().
+ */
+function ah_custom_ipe_entity_base_field_info(EntityTypeInterface $entity_type) {
+  $fields = array();
+
+  // Add a 'Component Type' base field to all block content entity.
+  if ($entity_type->id() === 'block_content') {
+    $fields['component_type'] = BaseFieldDefinition::create('boolean')
+      ->setLabel(t('Component Type'))
+      ->setDescription(t('Check "Reusable Component" if we want to reuse this component with this exact content later.'))
+      ->setRevisionable(TRUE)
+      ->setTranslatable(TRUE)
+      ->setRequired(TRUE)
+      ->setDefaultValue(0)
+      ->setSettings(array(
+        'on_label' => 'Reusbale Component',
+        'off_label' => 'One-off Component'
+      ))
+      ->setDisplayOptions('form', [
+        'type' => 'options_buttons',
+        'settings' => [],
+        'weight' => -10
+      ])
+      ->setDisplayOptions('view', [
+        'label' => 'above',
+        'type' => 'list_default',
+        'weight' => -10,
+      ])
+      ->setDisplayConfigurable('form', TRUE)
+      ->setDisplayConfigurable('view', TRUE);
+  }
+
+  return $fields;
+}
+
+/**
+ * Implements hook_panels_ipe_blocks_alter().
+ */
+function ah_custom_ipe_panels_ipe_blocks_alter(&$blocks, $panels_display) {
+  $filter_ipe_blocks = \Drupal::service('ah_custom_ipe.filter_ipe_blocks');
+  $blocks = $filter_ipe_blocks->filterReusable($blocks, $panels_display);
+}
+
+/**
+ * Implements hook_entity_presave().
+ *
+ * Handle edge case filtering for non-reusable components while created using IPE Tray.
+ */
+function ah_custom_ipe_entity_presave(EntityInterface $entity) {
+  if ($entity->getEntityTypeId() === 'block_content') {
+    $triggering_elem = \Drupal::request()->request->get('_triggering_element_name');
+    // If component is been created using IPE tray then
+    if ($triggering_elem === 'panels_ipe_submit') {
+      $_SESSION['current_component'] = [
+        'uuid' => $entity->uuid()
+      ];
+    }
+  }
+}
+
+/**
+ * Implement hook_js_settings_alter().
+ */
+function ah_custom_ipe_js_settings_alter(array &$settings, AttachedAssetsInterface $assets) {
+  if (isset($settings['panels_ipe'])) {
+    $block_types = \Drupal::database()->query("
+      select count(name) as block_types_count from config where name like 'block_content.type.%'
+    ")->fetchAll()[0];
+
+    if (isset($block_types->block_types_count)) {
+      $settings['panels_ipe']['block_types_count'] = $block_types
+        ->block_types_count;
+    }
+  }
+}

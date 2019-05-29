@@ -1,0 +1,97 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - block_content.type.priorities_list_points
+    - entity_browser.browser.image_browser
+    - field.field.block_content.priorities_list_points.field_priorities_list_cta
+    - field.field.block_content.priorities_list_points.field_priorities_list_desc
+    - field.field.block_content.priorities_list_points.field_priorities_list_image
+    - field.field.block_content.priorities_list_points.field_priorities_list_points
+    - field.field.block_content.priorities_list_points.field_priorities_list_subtitle
+    - field.field.block_content.priorities_list_points.field_priorities_list_title
+  module:
+    - content_moderation
+    - datetime
+    - entity_browser
+    - text
+id: block_content.priorities_list_points.default
+targetEntityType: block_content
+bundle: priorities_list_points
+mode: default
+content:
+  field_priorities_list_cta:
+    weight: 5
+    settings:
+      match_operator: CONTAINS
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: entity_reference_autocomplete
+    region: content
+  field_priorities_list_desc:
+    weight: 3
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: text_textfield
+    region: content
+  field_priorities_list_image:
+    type: entity_browser_file
+    weight: 4
+    settings:
+      entity_browser: image_browser
+      field_widget_edit: true
+      field_widget_remove: true
+      view_mode: default
+      preview_image_style: thumbnail
+      open: true
+      selection_mode: selection_append
+    region: content
+    third_party_settings: {  }
+  field_priorities_list_points:
+    weight: 6
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: text_textfield
+    region: content
+  field_priorities_list_subtitle:
+    weight: 2
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: text_textfield
+    region: content
+  field_priorities_list_title:
+    weight: 1
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: text_textfield
+    region: content
+  info:
+    type: string_textfield
+    weight: 0
+    region: content
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+  moderation_state:
+    type: moderation_state_default
+    weight: 8
+    settings: {  }
+    region: content
+    third_party_settings: {  }
+  scheduled_publication:
+    type: datetime_default
+    weight: 7
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+hidden: {  }

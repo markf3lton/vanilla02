@@ -1,0 +1,30 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_gif
+    - media.type.image
+    - paragraphs.paragraphs_type.icon_bar_stack
+  enforced:
+    module:
+      - icon_bar_stack
+id: paragraph.icon_bar_stack.field_gif
+field_name: field_gif
+entity_type: paragraph
+bundle: icon_bar_stack
+label: Icon
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:media'
+  handler_settings:
+    target_bundles:
+      image: image
+    sort:
+      field: _none
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference

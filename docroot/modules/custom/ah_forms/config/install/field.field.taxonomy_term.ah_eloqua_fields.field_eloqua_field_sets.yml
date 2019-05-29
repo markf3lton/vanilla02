@@ -1,0 +1,39 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.taxonomy_term.field_eloqua_field_sets
+    - taxonomy.vocabulary.ah_eloqua_fields
+  module:
+    - double_field
+  enforced:
+    module:
+      - ah_forms
+id: taxonomy_term.ah_eloqua_fields.field_eloqua_field_sets
+field_name: field_eloqua_field_sets
+entity_type: taxonomy_term
+bundle: ah_eloqua_fields
+label: 'Eloqua Field Sets'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  first:
+    required: true
+    list: false
+    allowed_values: {  }
+    max: null
+    min: null
+    on_label: 'On'
+    off_label: 'Off'
+  second:
+    required: true
+    list: false
+    allowed_values: {  }
+    max: null
+    min: null
+    on_label: 'On'
+    off_label: 'Off'
+field_type: double_field

@@ -1,0 +1,115 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.taxonomy_term.personali.field_b
+    - field.field.taxonomy_term.personali.field_ba
+    - field.field.taxonomy_term.personali.field_cta
+    - field.field.taxonomy_term.personali.field_cta_style
+    - field.field.taxonomy_term.personali.field_layout
+    - field.field.taxonomy_term.personali.field_segment
+    - field.field.taxonomy_term.personali.field_speciality
+    - field.field.taxonomy_term.personali.field_summary
+    - field.field.taxonomy_term.personali.field_text_color
+    - field.field.taxonomy_term.personali.field_title
+    - taxonomy.vocabulary.personali
+  module:
+    - color_field
+    - link
+    - options
+    - text
+id: taxonomy_term.personali.default
+targetEntityType: taxonomy_term
+bundle: personali
+mode: default
+content:
+  description:
+    label: hidden
+    type: text_default
+    weight: 0
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+  field_b:
+    type: entity_reference_entity_view
+    weight: 5
+    label: above
+    settings:
+      view_mode: default
+      link: false
+    third_party_settings: {  }
+    region: content
+  field_ba:
+    weight: 6
+    label: above
+    settings:
+      format: hex
+      opacity: '1'
+    third_party_settings: {  }
+    type: color_field_formatter_text
+    region: content
+  field_cta:
+    weight: 10
+    label: above
+    settings:
+      trim_length: 80
+      url_only: false
+      url_plain: false
+      rel: ''
+      target: ''
+    third_party_settings: {  }
+    type: link
+    region: content
+  field_cta_style:
+    weight: 11
+    label: above
+    settings:
+      link: true
+    third_party_settings: {  }
+    type: entity_reference_label
+    region: content
+  field_layout:
+    weight: 9
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    type: list_default
+    region: content
+  field_segment:
+    weight: 1
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    type: list_default
+    region: content
+  field_speciality:
+    weight: 2
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    type: list_default
+    region: content
+  field_summary:
+    weight: 8
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    type: text_default
+    region: content
+  field_text_color:
+    weight: 4
+    label: above
+    settings:
+      format: hex
+      opacity: '1'
+    third_party_settings: {  }
+    type: color_field_formatter_text
+    region: content
+  field_title:
+    weight: 7
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    type: text_default
+    region: content
+hidden: {  }

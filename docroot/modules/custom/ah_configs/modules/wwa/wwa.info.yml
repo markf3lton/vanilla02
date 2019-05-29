@@ -1,0 +1,5 @@
+name: 'Who We Are Configurations'
+type: module
+description: 'Module to install or update `Who we are` configurations.'
+core: 8.x
+package: Ah Configurations

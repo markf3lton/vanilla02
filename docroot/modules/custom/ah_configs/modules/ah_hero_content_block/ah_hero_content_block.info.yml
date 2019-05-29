@@ -1,0 +1,5 @@
+name: 'AH Hero Content Block Configurations'
+type: module
+description: 'Module to install or update hero content block configurations on the go.'
+core: 8.x
+package: Ah Configurations

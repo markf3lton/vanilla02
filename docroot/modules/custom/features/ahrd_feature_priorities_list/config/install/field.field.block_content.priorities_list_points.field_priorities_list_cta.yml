@@ -1,0 +1,28 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - block_content.type.priorities_list_points
+    - field.storage.block_content.field_priorities_list_cta
+    - taxonomy.vocabulary.cta
+id: block_content.priorities_list_points.field_priorities_list_cta
+field_name: field_priorities_list_cta
+entity_type: block_content
+bundle: priorities_list_points
+label: 'Priorities List CTA'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:taxonomy_term'
+  handler_settings:
+    target_bundles:
+      cta: cta
+    sort:
+      field: name
+      direction: asc
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference

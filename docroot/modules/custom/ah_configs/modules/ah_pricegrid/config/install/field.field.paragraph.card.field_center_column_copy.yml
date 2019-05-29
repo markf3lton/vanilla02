@@ -1,0 +1,23 @@
+langcode: en
+status: true
+dependencies:
+  enforced:
+    module:
+      - ah_pricegrid
+  config:
+    - field.storage.paragraph.field_center_column_copy
+    - paragraphs.paragraphs_type.card
+  module:
+    - text
+id: paragraph.card.field_center_column_copy
+field_name: field_center_column_copy
+entity_type: paragraph
+bundle: card
+label: 'Center column copy'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: text_long

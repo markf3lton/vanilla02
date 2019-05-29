@@ -1,0 +1,45 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - block_content.type.tab_module
+    - field.storage.block_content.field_tabs
+    - paragraphs.paragraphs_type.tabs
+  module:
+    - entity_reference_revisions
+  enforced:
+    module:
+      - ah_tabs
+id: block_content.tab_module.field_tabs
+field_name: field_tabs
+entity_type: block_content
+bundle: tab_module
+label: Tabs
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:paragraph'
+  handler_settings:
+    negate: 0
+    target_bundles:
+      tabs: tabs
+    target_bundles_drag_drop:
+      article_highlights:
+        weight: 6
+        enabled: false
+      case_study_icons:
+        weight: 7
+        enabled: false
+      onepager:
+        weight: 8
+        enabled: false
+      wwa_content_blocks:
+        weight: 9
+        enabled: false
+      tabs:
+        enabled: true
+        weight: 10
+field_type: entity_reference_revisions

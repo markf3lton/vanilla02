@@ -1,0 +1,11 @@
+langcode: en
+status: true
+dependencies:
+  enforced:
+    module:
+      - ah_forms
+name: 'Forms – Error Message'
+vid: ah_forms_error_subheadline
+description: 'Groups AH forms Error Sub Headline'
+hierarchy: 0
+weight: 0

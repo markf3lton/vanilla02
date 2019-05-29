@@ -1,0 +1,26 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - block_content.type.hero_content_block
+    - field.field.block_content.hero_content_block.field_hero_content_block
+  module:
+    - entity_reference_revisions
+  enforced:
+    module:
+      - ah_hero_content_block
+id: block_content.hero_content_block.default
+targetEntityType: block_content
+bundle: hero_content_block
+mode: default
+content:
+  field_hero_content_block:
+    type: entity_reference_revisions_entity_view
+    weight: 0
+    label: above
+    settings:
+      view_mode: default
+      link: ''
+    third_party_settings: {  }
+    region: content
+hidden: {  }

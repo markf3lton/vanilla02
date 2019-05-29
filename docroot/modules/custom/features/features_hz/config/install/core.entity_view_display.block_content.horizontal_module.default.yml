@@ -1,0 +1,74 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - block_content.type.horizontal_module
+    - field.field.block_content.horizontal_module.field_container_background_color
+    - field.field.block_content.horizontal_module.field_ctalink
+    - field.field.block_content.horizontal_module.field_ctastyle
+    - field.field.block_content.horizontal_module.field_hzsummary
+    - field.field.block_content.horizontal_module.field_hztitle
+    - field.field.block_content.horizontal_module.field_wrapper_background_color
+  module:
+    - color_field
+    - link
+    - text
+id: block_content.horizontal_module.default
+targetEntityType: block_content
+bundle: horizontal_module
+mode: default
+content:
+  field_container_background_color:
+    weight: 3
+    label: above
+    settings:
+      format: hex
+      opacity: '1'
+    third_party_settings: {  }
+    type: color_field_formatter_text
+    region: content
+  field_ctalink:
+    weight: 1
+    label: above
+    settings:
+      trim_length: 80
+      url_only: false
+      url_plain: false
+      rel: ''
+      target: ''
+    third_party_settings: {  }
+    type: link
+    region: content
+  field_ctastyle:
+    weight: 2
+    label: above
+    settings:
+      link: true
+    third_party_settings: {  }
+    type: entity_reference_label
+    region: content
+  field_hzsummary:
+    weight: 6
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    type: text_default
+    region: content
+  field_hztitle:
+    weight: 5
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    type: text_default
+    region: content
+  field_wrapper_background_color:
+    weight: 4
+    label: above
+    settings:
+      format: hex
+      opacity: '1'
+    third_party_settings: {  }
+    type: color_field_formatter_text
+    region: content
+hidden:
+  scheduled_publication: true

@@ -1,0 +1,18 @@
+name: feature_priorities_list
+description: 'A Feature Bundle for Priorities List Component'
+type: module
+core: 8.x
+dependencies:
+  - block_content
+  - color_field
+  - content_moderation
+  - datetime
+  - entity_browser
+  - feature_herobanner
+  - features_cta
+  - field
+  - field_group
+  - image
+  - link
+  - text
+version: 8.x-1.0

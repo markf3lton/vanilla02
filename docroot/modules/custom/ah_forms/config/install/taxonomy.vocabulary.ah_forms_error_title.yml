@@ -1,0 +1,11 @@
+langcode: en
+status: true
+dependencies:
+  enforced:
+    module:
+      - ah_forms
+name: 'Forms - Error Title'
+vid: ah_forms_error_title
+description: 'Groups AH forms Error Title'
+hierarchy: 0
+weight: 0

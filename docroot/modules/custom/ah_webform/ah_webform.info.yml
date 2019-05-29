@@ -1,0 +1,8 @@
+name: 'AH Web form'
+type: module
+description: 'Helps to create the webform component'
+core: 8.x
+package: 'Forms Componentization'
+dependencies:
+  - webform
+  - select2boxes

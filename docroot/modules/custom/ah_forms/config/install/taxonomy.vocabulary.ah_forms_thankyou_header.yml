@@ -1,0 +1,11 @@
+langcode: en
+status: true
+dependencies:
+  enforced:
+    module:
+      - ah_forms
+name: 'Forms – Thank You Message Header Text'
+vid: ah_forms_thankyou_header
+description: 'Groups AH forms Thank you Header'
+hierarchy: 0
+weight: 0

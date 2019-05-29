@@ -1,0 +1,178 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - entity_browser.browser.media_browser
+    - field.field.paragraph.wwa_content_blocks.field_article_highlights_bullets
+    - field.field.paragraph.wwa_content_blocks.field_article_highlights_title
+    - field.field.paragraph.wwa_content_blocks.field_image
+    - field.field.paragraph.wwa_content_blocks.field_img
+    - field.field.paragraph.wwa_content_blocks.field_wwa_cb_is_video
+    - field.field.paragraph.wwa_content_blocks.field_wwa_cb_title
+    - field.field.paragraph.wwa_content_blocks.field_wwa_cb_title_color
+    - field.field.paragraph.wwa_content_blocks.field_wwa_cb_video
+    - paragraphs.paragraphs_type.wwa_content_blocks
+  module:
+    - color_field
+    - conditional_fields
+    - entity_browser
+    - field_group
+    - text
+  enforced:
+    module:
+      - wwa_cb
+third_party_settings:
+  field_group:
+    group_wwa_cb_block_image:
+      children:
+        - field_image
+        - field_img
+      parent_name: ''
+      weight: 6
+      format_type: fieldset
+      format_settings:
+        id: ''
+        classes: ''
+        description: ''
+        required_fields: false
+      label: 'Block Image'
+      region: content
+id: paragraph.wwa_content_blocks.default
+targetEntityType: paragraph
+bundle: wwa_content_blocks
+mode: default
+content:
+  field_article_highlights_bullets:
+    weight: 3
+    settings:
+      rows: 9
+      summary_rows: 3
+      placeholder: ''
+    third_party_settings: {  }
+    type: text_textarea_with_summary
+    region: content
+  field_article_highlights_title:
+    weight: 2
+    settings:
+      rows: 9
+      summary_rows: 3
+      placeholder: ''
+    third_party_settings: {  }
+    type: text_textarea_with_summary
+    region: content
+  field_image:
+    type: entity_browser_entity_reference
+    weight: 7
+    settings:
+      entity_browser: media_browser
+      field_widget_display: rendered_entity
+      field_widget_edit: true
+      field_widget_remove: true
+      selection_mode: selection_append
+      field_widget_display_settings:
+        view_mode: thumbnail
+      field_widget_replace: false
+      open: false
+    region: content
+    third_party_settings:
+      conditional_fields:
+        7e965c41-b7b7-4a72-815f-9751274fbf87:
+          dependee: field_wwa_cb_is_video
+          settings:
+            state: visible
+            condition: '!checked'
+            grouping: OR
+            values_set: 1
+            value: ''
+            values: {  }
+            value_form:
+              value: false
+            effect: show
+            effect_options: {  }
+            selector: ''
+          entity_type: paragraph
+          bundle: wwa_content_blocks
+  field_img:
+    type: entity_browser_entity_reference
+    weight: 8
+    settings:
+      entity_browser: media_browser
+      field_widget_display: rendered_entity
+      field_widget_edit: true
+      field_widget_remove: true
+      selection_mode: selection_append
+      field_widget_display_settings:
+        view_mode: thumbnail
+      field_widget_replace: false
+      open: false
+    region: content
+    third_party_settings:
+      conditional_fields:
+        b59567d7-d1e5-4780-8cf2-cb5f80ced724:
+          dependee: field_wwa_cb_is_video
+          settings:
+            state: visible
+            condition: '!checked'
+            grouping: OR
+            values_set: 1
+            value: ''
+            values: {  }
+            value_form:
+              value: false
+            effect: show
+            effect_options: {  }
+            selector: ''
+          entity_type: paragraph
+          bundle: wwa_content_blocks
+  field_wwa_cb_is_video:
+    weight: 4
+    settings:
+      display_label: true
+    third_party_settings: {  }
+    type: boolean_checkbox
+    region: content
+  field_wwa_cb_title:
+    weight: 0
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: string_textfield
+    region: content
+  field_wwa_cb_title_color:
+    weight: 1
+    settings:
+      default_colors: '#582C83,#000000,#FFFFFF,#F8F8F8,#F4F4F4,#D8D8D8,#B7BF10,#7A9A01,#0093B2,#A50050,#9E9E9E,#666666,#62BB46,#F73F3F'
+    third_party_settings: {  }
+    type: color_field_widget_box
+    region: content
+  field_wwa_cb_video:
+    weight: 5
+    settings:
+      match_operator: CONTAINS
+      size: 60
+      placeholder: ''
+    third_party_settings:
+      conditional_fields:
+        4bc2b024-0d55-40d5-9a11-836dc7f234a6:
+          dependee: field_wwa_cb_is_video
+          settings:
+            state: visible
+            condition: checked
+            grouping: OR
+            values_set: 1
+            value: ''
+            values: {  }
+            value_form:
+              value: false
+            effect: show
+            effect_options: {  }
+            selector: ''
+          entity_type: paragraph
+          bundle: wwa_content_blocks
+    type: entity_reference_autocomplete
+    region: content
+hidden:
+  created: true
+  status: true
+  uid: true

@@ -1,0 +1,21 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.taxonomy_term.field_ah_forms_alias_name
+    - taxonomy.vocabulary.ah_eloqua_tasks
+  enforced:
+    module:
+      - ah_forms
+id: taxonomy_term.ah_eloqua_tasks.field_ah_forms_alias_name
+field_name: field_ah_forms_alias_name
+entity_type: taxonomy_term
+bundle: ah_eloqua_tasks
+label: 'Alias Name'
+description: 'Alias name for Eloqua task data to provide loose match search pattern.'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

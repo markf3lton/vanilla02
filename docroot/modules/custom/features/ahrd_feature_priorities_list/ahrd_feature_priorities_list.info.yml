@@ -1,0 +1,13 @@
+name: ahrd_feature_priorities_list
+description: 'A Feature Bundle for Priorities List Component'
+type: module
+core: 8.x
+dependencies:
+  - block_content
+  - content_moderation
+  - datetime
+  - entity_browser
+  - field
+  - image
+  - text
+version: 8.x-1.0

@@ -1,0 +1,45 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.taxonomy_term.ah_eloqua_fields.field_eloqua_field_sets
+    - taxonomy.vocabulary.ah_eloqua_fields
+  module:
+    - double_field
+    - text
+  enforced:
+    module:
+      - ah_forms
+id: taxonomy_term.ah_eloqua_fields.default
+targetEntityType: taxonomy_term
+bundle: ah_eloqua_fields
+mode: default
+content:
+  description:
+    label: hidden
+    type: text_default
+    weight: 0
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+  field_eloqua_field_sets:
+    weight: 1
+    label: above
+    settings:
+      inline: true
+      first:
+        hidden: false
+        prefix: ''
+        suffix: ''
+        link: false
+        format_type: medium
+      second:
+        hidden: false
+        prefix: ''
+        suffix: ''
+        link: false
+        format_type: medium
+    third_party_settings: {  }
+    type: double_field_unformatted_list
+    region: content
+hidden: {  }

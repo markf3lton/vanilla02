@@ -1,0 +1,216 @@
+id,name,description,alias,subject,elq_description,priority,nurture,email_flag,term_const_first,term_const_second
+1,"FullRegFormNoComments Meeting Scheduler",,forms-eloqua-task-data/fullregformnocomments-meeting-scheduler,"Meeting Request - Pilot: Date and Time Included - ah.com","Meeting date and time selected by contact. Follow steps below as this is a change to your normal process: 
+
+Step 1: Review selected date and time 
+Step 2: Schedule meeting in assignomatic 
+Step 3: After meeting has been scheduled, send contact Decidedly email confirming meeting. 
+
+Meeting Date: {{Latest_MeetingDate1__c}}
+Meeting Time: {{Latest_MeetingTime1__c}}
+
+Information from their form submission is below. 
+
+Form Submitted: {{Latest_WebForm}}
+Name of page user submitted form from: {{Page_Display_Name}} (https://www.athenahealth.com{{Friendly_URL}} )
+Keyword (if applicable): {{Latest_PPCKeyword}}
+Comments: {{Latest_Comments}}
+Name: {{Latest_FirstName}} {{Latest_LastName}}
+Practice Name: {{Latest_CompanyName}}
+Number of Docs: {{Latest_NumberOfDocs}}
+State: {{Latest_State}}
+Phone: {{Latest_Phone}}
+Email: {{Latest_EmailAddress}}
+Specialty:{{specialty1}}
+
+ *************MARKETING USE - DO NOT ERASE**************
+Campaign ID: {{Latest_SFDC_CampaignID__c}}
+BMTN: {{Latest_BMTN}}
+Visitor ID:{{Latest_VisitorID}}
+Form Category: {{formCategory1}}",1,Yes,1,LeadSource;sfga;htpgt;kenshooid;Latest_SFDC_CampaignID2__c;formCategory1,"Web Site;00DA0000000HrDQ;7985b2b2-83b5-4889-84b1-110868f5a550;NA;NA;NA"
+2,"Health Plans Contact Us Form","Health Plans Contact Us Form
+",forms-eloqua-task-data/health-plans-contact-us-form,"Web Hit","Contact has filled out a form on our website. Information from their submission is below. Please call to assess interest in a demo. 
+Form Submitted: {{Latest_WebForm}}
+Name of page user submitted form from: {{Page_Display_Name}} (http://www.athenahealth.com{{Friendly_URL}} )
+Keyword (if applicable): {{Latest_PPCKeyword}}
+Comments: {{Latest_Comments}}
+Name: {{Latest_FirstName}} {{Latest_LastName}}
+Practice Name: {{Latest_CompanyName}}
+Specialty: {{Latest_Specialty}}
+Title: {{Latest_JobTitle}}
+Number of Docs: {{Latest_NumberOfDocs}}
+State: {{Latest_State}}
+Phone: {{Latest_Phone}}
+Email: {{Latest_EmailAddress}}
+ *************MARKETING USE - DO NOT ERASE**************
+Campaign ID: {{Latest_SFDC_CampaignID}}
+BMTN: {{Latest_BMTN}}
+Visitor ID:{{Latest_VisitorID}}
+Form Category: {{formCategory1}}",1,Yes,1,LeadSource;sfga;Latest_SFDC_CampaignStatus__c;Latest_ReferrerInfo__c;Latest_SFDC_CampaignID2__c;formCategory1,"Web Site;00DA0000000HrDQ;Responded;NA;NA;NA"
+3,"Epocrates Clinicals Demo","<p>Epocrates Inside Clinicals Demo</p>
+",forms-eloqua-task-data/epocrates-clinicals-demo,"Web Hit","Contact has filled out a form on our website. Information from their submission is below. Please call to assess interest in a demo. 
+Form Submitted: {{Latest_WebForm}}
+Name of page user submitted form from: {{Page_Display_Name}} (http://www.athenahealth.com{{Friendly_URL}} )
+Keyword (if applicable): {{Latest_PPCKeyword}}
+Comments: {{Latest_Comments}}
+Name: {{Latest_FirstName}} {{Latest_LastName}}
+Practice Name: {{Latest_CompanyName}}
+Specialty: {{Latest_Specialty}}
+Title: {{Latest_JobTitle}}
+Number of Docs: {{Latest_NumberOfDocs}}
+State: {{Latest_State}}
+Phone: {{Latest_Phone}}
+Email: {{Latest_EmailAddress}}
+ *************MARKETING USE - DO NOT ERASE**************
+Campaign ID: {{Latest_SFDC_CampaignID}}
+BMTN: {{Latest_BMTN}}
+Visitor ID:{{Latest_VisitorID}}
+Form Category: {{formCategory1}}",1,Yes,1,LeadSource;sfga;Latest_SFDC_CampaignStatus__c;Latest_ReferrerInfo__c;Latest_SFDC_CampaignID2__c;formCategory1,"Web Site;00DA0000000HrDQ;Responded;NA;NA;NA"
+4,"Interactive Demo Form","<p>Interactive Demo Form</p>
+",forms-eloqua-task-data/interactive-demo-form,"Web Hit - Product Demo Submission","Contact has filled out a form on our website. Information from their submission is below. Please call to assess interest in a demo. 
+
+Form Submitted: {{Latest_WebForm}} 
+Name of page user submitted form from: {{Page_Display_Name}} (http://www.athenahealth.com{{Friendly_URL}} )
+Keyword (if applicable): {{Latest_PPCKeyword}}
+Comments: {{Latest_Comments}}
+Name: {{Latest_FirstName}} {{Latest_LastName}}
+Practice Name: {{Latest_CompanyName}}
+Specialty: {{Latest_Specialty}}
+Title: {{Latest_JobTitle}}
+Number of Docs: {{Latest_NumberOfDocs}}
+State: {{Latest_State}}
+Phone: {{Latest_Phone}}
+Email: {{Latest_EmailAddress}}
+ *************MARKETING USE - DO NOT ERASE************** 
+Campaign ID: {{Latest_SFDC_CampaignID}}
+BMTN: {{Latest_BMTN}}
+Visitor ID:{{Latest_VisitorID}}
+Form Category: {{formCategory1}}",1,Yes,1,LeadSource;sfga;Latest_SFDC_CampaignStatus__c;Latest_ReferrerInfo__c;Latest_SFDC_CampaignID2__c;formCategory1;Latest_SFDC_CampaignID__c,"Web Site;00DA0000000HrDQ;Responded;NA;NA;NA;701A0000000Mlu9"
+5,"Collector Demo Form",,forms-eloqua-task-data/collector-demo-form,"Web Hit - Product Demo Submission","Please call contact, as they have filled out a form to view a demo of athenaCollector from athenahealth.com. 
+Form Submitted: {{Latest_WebForm}} 
+Name of page user submitted form from: {{Page_Display_Name}} (https://www.athenahealth.com{{Friendly_URL}} ) 
+Keyword (if applicable): {{Latest_PPCKeyword}} 
+Name: {{Latest_FirstName}} {{Latest_LastName}} 
+Practice Name: {{Latest_CompanyName}} 
+Number of Docs: {{Latest_NumberOfDocs}} 
+Phone: {{Latest_Phone}} 
+Email: {{Latest_EmailAddress}} 
+ 
+ *************MARKETING USE - DO NOT ERASE**************     
+Campaign ID: {{Latest_SFDC_CampaignID}} 
+BMTN: {{Latest_BMTN}} 
+Visitor ID:{{Latest_VisitorID}} 
+Form Category: {{formCategory1}}",1,Yes,1,LeadSource;sfga;Latest_SFDC_CampaignStatus__c;Latest_ReferrerInfo__c;Latest_SFDC_CampaignID2__c;formCategory1,"Web Site;00DA0000000HrDQ;Responded;NA;NA;NA"
+6,"Contact Us Form",,forms-eloqua-task-data/contact-us-form,"Web Hit - Contact Us","Please call contact, as they have filled out the Contact Us form on our website. Information from their submission is below.   
+Form Submitted: {{Latest_WebForm}}
+Name of page user submitted form from: {{Page_Display_Name}} (https://www.athenahealth.com{{Friendly_URL}} )
+Keyword (if applicable): {{Latest_PPCKeyword}}
+Comments: {{Latest_Comments}}
+Name: {{Latest_FirstName}} {{Latest_LastName}}
+Practice Name: {{Latest_CompanyName}}
+Number of Docs: {{Latest_NumberOfDocs}}
+State: {{Latest_State}}
+Phone: {{Latest_Phone}}
+Email: {{Latest_EmailAddress}}
+*******MARKETING USE - DO NOT ERASE*********
+Campaign ID: {{Latest_SFDC_CampaignID}}
+BMTN: {{Latest_BMTN}}
+Visitor ID:{{Latest_VisitorID}}
+Form Category: {{formCategory1}}",1,Yes,1,LeadSource;sfga;Latest_SFDC_CampaignStatus__c;Latest_ReferrerInfo__c;Latest_SFDC_CampaignID2__c;formCategory1,"Web Site;00DA0000000HrDQ;Responded;NA;NA;NA"
+7,"Schedule Meeting Full Form",,forms-eloqua-task-data/schedule-meeting-full-form,"Meeting Request - Pilot: Date and Time Included - ah.com","Meeting date and time selected by contact. Follow steps below as this is a change to your normal process: 
+
+Step 1: Review selected date and time 
+Step 2: Schedule meeting in assignomatic 
+Step 3: After meeting has been scheduled, send contact Decidedly email confirming meeting. 
+
+Meeting Date: {{Latest_MeetingDate1__c}}
+Meeting Time: {{Latest_MeetingTime1__c}}
+
+Information from their form submission is below. 
+
+Form Submitted: {{Latest_WebForm}}
+Name of page user submitted form from: {{Page_Display_Name}} (https://www.athenahealth.com{{Friendly_URL}} )
+Keyword (if applicable): {{Latest_PPCKeyword}}
+Comments: {{Latest_Comments}}
+Name: {{Latest_FirstName}} {{Latest_LastName}}
+Practice Name: {{Latest_CompanyName}}
+Number of Docs: {{Latest_NumberOfDocs}}
+State: {{Latest_State}}
+Phone: {{Latest_Phone}}
+Email: {{Latest_EmailAddress}}
+Specialty:{{specialty1}}
+
+ *************MARKETING USE - DO NOT ERASE**************
+Campaign ID: {{Latest_SFDC_CampaignID__c}}
+BMTN: {{Latest_BMTN}}
+Visitor ID:{{Latest_VisitorID}}
+Form Category: {{formCategory1}}",1,Yes,1,LeadSource;sfga;Latest_SFDC_CampaignStatus__c;Latest_ReferrerInfo__c;Latest_SFDC_CampaignID2__c;formCategory1,"Web Site;00DA0000000HrDQ;Responded;NA;NA;NA"
+8,"Coordinator Core Form",,forms-eloqua-task-data/coordinator-core-form,"Web Hit","Contact has filled out a form on our website. Information from their submission is below. Please call to assess interest in a demo.
+Form Submitted: {{Latest_WebForm}}
+Name of page user submitted form from: {{Page_Display_Name}} (http://www.athenahealth.com{{Friendly_URL}} )
+Keyword (if applicable): {{Latest_PPCKeyword}}
+Comments: {{Latest_Comments}}
+Name: {{Latest_FirstName}} {{Latest_LastName}}
+Practice Name: {{Latest_CompanyName}}
+Specialty: {{Latest_Specialty}}
+Title: {{Latest_JobTitle}}
+Number of Docs: {{Latest_NumberOfDocs}}
+State: {{Latest_State}}
+Phone: {{Latest_Phone}}
+Email: {{Latest_EmailAddress}}
+ *************MARKETING USE - DO NOT ERASE**************
+Campaign ID: {{Latest_SFDC_CampaignID}}
+BMTN: {{Latest_BMTN}}
+Visitor ID:{{Latest_VisitorID}}
+Form Category: {{formCategory1}}",1,Yes,1,LeadSource;sfga;Latest_SFDC_CampaignStatus__c;Latest_ReferrerInfo__c;Latest_SFDC_CampaignID2__c;formCategory1,"Web Site;00DA0000000HrDQ;Responded;NA;NA;NA"
+9,"Side Widget Form",,forms-eloqua-task-data/side-widget-form,"Web Hit - Meeting Request Submission","Contact has filled out the Side Widget form, called request a live demo on the website. This form is on the side of every page, and scrolls up and down as the user scrolls. Please call to check on contacts availability. Information from their form submission is below. 
+Form Submitted: {{Latest_WebForm}}
+Name of page user submitted form from: {{Page_Display_Name}} (https://www.athenahealth.com{{Friendly_URL}} )
+Keyword (if applicable): {{Latest_PPCKeyword}}
+Comments: {{Latest_Comments}}
+Name: {{Latest_FirstName}} {{Latest_LastName}}
+Practice Name: {{Latest_CompanyName}}
+Number of Docs: {{Latest_NumberOfDocs}}
+State: {{Latest_State}}
+Phone: {{Latest_Phone}}
+Email: {{Latest_EmailAddress}}
+********MARKETING USE - DO NOT ERASE**********
+Campaign ID: {{Latest_SFDC_CampaignID}}
+BMTN: {{Latest_BMTN}}
+Visitor ID:{{Latest_VisitorID}}
+Form Category: {{formCategory1}}",1,Yes,1,LeadSource;sfga;Latest_SFDC_CampaignStatus__c;Latest_ReferrerInfo__c;Latest_SFDC_CampaignID2__c;formCategory1,"Web Site;00DA0000000HrDQ;Responded;NA;NA;NA"
+10,"Henry Schein Form",,forms-eloqua-task-data/henry-schein-form,"Web Hit","Contact has filled out a form on our website. Information from their submission is below. Please call to assess interest in a demo. 
+Form Submitted: {{Latest_WebForm}}
+Name of page user submitted form from: {{Page_Display_Name}} (http://www.athenahealth.com{{Friendly_URL}} )
+Keyword (if applicable): {{Latest_PPCKeyword}}
+Comments: {{Latest_Comments}}
+Name: {{Latest_FirstName}} {{Latest_LastName}}
+Practice Name: {{Latest_CompanyName}}
+Specialty: {{Latest_Specialty}}
+Title: {{Latest_JobTitle}}
+Number of Docs: {{Latest_NumberOfDocs}}
+State: {{Latest_State}}
+Phone: {{Latest_Phone}}
+Email: {{Latest_EmailAddress}}
+ *************MARKETING USE - DO NOT ERASE**************
+Campaign ID: {{Latest_SFDC_CampaignID}}
+BMTN: {{Latest_BMTN}}
+Visitor ID:{{Latest_VisitorID}}
+Form Category: {{formCategory1}}",1,Yes,1,LeadSource;sfga;Latest_SFDC_CampaignStatus__c;Latest_ReferrerInfo__c;Latest_SFDC_CampaignID2__c;formCategory1,"Web Site;00DA0000000HrDQ;Responded;NA;NA;NA"
+11,"Fax Submission Error Form",,forms-eloqua-task-data/fax-submission-error-form,"Web Hit","Contact has filled out a form on our website. Information from their submission is below. Please call to assess interest in a demo. 
+Form Submitted: {{Latest_WebForm}}
+Name of page user submitted form from: {{Page_Display_Name}} (http://www.athenahealth.com{{Friendly_URL}} )
+Keyword (if applicable): {{Latest_PPCKeyword}}
+Comments: {{Latest_Comments}}
+Name: {{Latest_FirstName}} {{Latest_LastName}}
+Practice Name: {{Latest_CompanyName}}
+Specialty: {{Latest_Specialty}}
+Title: {{Latest_JobTitle}}
+Number of Docs: {{Latest_NumberOfDocs}}
+State: {{Latest_State}}
+Phone: {{Latest_Phone}}
+Email: {{Latest_EmailAddress}}
+ *************MARKETING USE - DO NOT ERASE**************
+Campaign ID: {{Latest_SFDC_CampaignID}}
+BMTN: {{Latest_BMTN}}
+Visitor ID:{{Latest_VisitorID}}
+Form Category: {{formCategory1}}",1,Yes,1,LeadSource;sfga;Latest_SFDC_CampaignStatus__c;Latest_ReferrerInfo__c;Latest_SFDC_CampaignID2__c;formCategory1,"Web Site;00DA0000000HrDQ;Responded;NA;NA;NA"

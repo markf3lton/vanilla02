@@ -1,0 +1,25 @@
+ahd.content:
+  path: '/ahd'
+  defaults:
+    _controller: '\Drupal\ahd_custom\Controller\AhdController::content'
+    _title: 'athenahealth custom settings'
+  requirements:
+    _permission: 'access content'
+ahd_custom.admin_settings_form:
+  path: '/admin/config/ahd_custom/adminsettings'
+  defaults:
+    _form: '\Drupal\ahd_custom\Form\AhCustomConfig'
+    _title: 'athenahealth custom configuration'
+  requirements:
+    _permission: 'access administration pages'
+  options:
+    _admin_route: TRUE
+ahd_custom.non_drupal_url:
+  path: '/admin/config/search/simplesitemap/nondrupal'
+  defaults:
+    _form: '\Drupal\ahd_custom\Form\NonDrupalLinks'
+    _title: 'Non Drupal Links'
+  requirements:
+    _permission: 'access administration pages'
+  options:
+    _admin_route: TRUE

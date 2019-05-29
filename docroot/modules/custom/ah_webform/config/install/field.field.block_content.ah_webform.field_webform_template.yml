@@ -1,0 +1,31 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - block_content.type.ah_webform
+    - field.storage.block_content.field_webform_template
+  module:
+    - webform
+  enforced:
+    module:
+      - ah_webform
+id: block_content.ah_webform.field_webform_template
+field_name: field_webform_template
+entity_type: block_content
+bundle: ah_webform
+label: 'Field Template'
+description: 'Field Templates can be pulled from this list, in Sitecore this was the WFFM'
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:webform'
+  handler_settings:
+    target_bundles: null
+    auto_create: false
+  default_data: ''
+  status: open
+  open: ''
+  close: ''
+field_type: webform

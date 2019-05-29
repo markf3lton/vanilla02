@@ -1,0 +1,25 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_wwa_cb_is_video
+    - paragraphs.paragraphs_type.advanced_hero_content_block
+  enforced:
+    module:
+      - ah_hero_content_block
+id: paragraph.advanced_hero_content_block.field_wwa_cb_is_video
+field_name: field_wwa_cb_is_video
+entity_type: paragraph
+bundle: advanced_hero_content_block
+label: 'Show video'
+description: ''
+required: false
+translatable: true
+default_value:
+  -
+    value: 0
+default_value_callback: ''
+settings:
+  on_label: 'On'
+  off_label: 'Off'
+field_type: boolean

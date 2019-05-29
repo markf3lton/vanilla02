@@ -1,0 +1,11 @@
+langcode: en
+status: true
+dependencies:
+  enforced:
+    module:
+      - ah_hero_content_block
+id: advanced_hero_content_block
+label: 'Advanced Hero Content Block'
+icon_uuid: null
+description: 'Hero Content Blocks for Careers page with flexibility to choose background color, Text alignment and multiple CTA link or button.'
+behavior_plugins: {  }

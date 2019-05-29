@@ -1,0 +1,23 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - block_content.type.campaign_banner
+    - field.storage.block_content.field_title
+  module:
+    - text
+  enforced:
+    module:
+      - ah_campaignbanner
+id: block_content.campaign_banner.field_title
+field_name: field_title
+entity_type: block_content
+bundle: campaign_banner
+label: Title
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: text

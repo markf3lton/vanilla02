@@ -1,0 +1,46 @@
+uuid: 462ffcee-b9b4-4a9c-ac9b-21a0ad2c754c
+langcode: en
+status: true
+dependencies:
+  config:
+    - block_content.type.icon_bar_stack
+    - field.storage.block_content.field_icon_bar
+    - paragraphs.paragraphs_type.icon_bar_stack
+  module:
+    - entity_reference_revisions
+  enforced:
+    module:
+      - icon_bar_stack
+id: block_content.icon_bar_stack.field_icon_bar
+field_name: field_icon_bar
+entity_type: block_content
+bundle: icon_bar_stack
+label: 'Icon Bar'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:paragraph'
+  handler_settings:
+    negate: 0
+    target_bundles:
+      icon_bar_stack: icon_bar_stack
+    target_bundles_drag_drop:
+      article_highlights:
+        weight: 6
+        enabled: false
+      case_study_icons:
+        weight: 7
+        enabled: false
+      icon_bar_stack:
+        enabled: true
+        weight: 8
+      onepager:
+        weight: 9
+        enabled: false
+      wwa_content_blocks:
+        weight: 10
+        enabled: false
+field_type: entity_reference_revisions

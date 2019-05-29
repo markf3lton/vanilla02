@@ -1,0 +1,23 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - block_content.type.icon_bar_stack
+    - field.storage.block_content.field_body_copy
+  module:
+    - text
+  enforced:
+    module:
+      - icon_bar_stack
+id: block_content.icon_bar_stack.field_body_copy
+field_name: field_body_copy
+entity_type: block_content
+bundle: icon_bar_stack
+label: 'Sub Copy'
+description: 'This copy will be placed after icons bars and before the CTA'
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: text_long

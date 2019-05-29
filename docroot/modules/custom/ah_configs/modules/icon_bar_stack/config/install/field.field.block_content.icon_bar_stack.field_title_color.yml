@@ -1,0 +1,27 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - block_content.type.icon_bar_stack
+    - field.storage.block_content.field_title_color
+  module:
+    - color_field
+  enforced:
+    module:
+      - icon_bar_stack
+id: block_content.icon_bar_stack.field_title_color
+field_name: field_title_color
+entity_type: block_content
+bundle: icon_bar_stack
+label: 'Title Color'
+description: ''
+required: false
+translatable: true
+default_value:
+  -
+    color: '#582C83'
+    opacity: null
+default_value_callback: ''
+settings:
+  opacity: 0
+field_type: color_field_type

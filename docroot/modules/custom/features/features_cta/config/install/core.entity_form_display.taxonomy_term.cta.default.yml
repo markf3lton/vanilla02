@@ -1,0 +1,59 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.taxonomy_term.cta.field_cta_behaviour
+    - field.field.taxonomy_term.cta.field_cta_color
+    - field.field.taxonomy_term.cta.field_cta_label
+    - field.field.taxonomy_term.cta.field_cta_type
+    - taxonomy.vocabulary.cta
+  module:
+    - path
+    - text
+id: taxonomy_term.cta.default
+targetEntityType: taxonomy_term
+bundle: cta
+mode: default
+content:
+  field_cta_behaviour:
+    weight: 5
+    settings: {  }
+    third_party_settings: {  }
+    type: options_buttons
+    region: content
+  field_cta_color:
+    weight: 4
+    settings: {  }
+    third_party_settings: {  }
+    type: options_buttons
+    region: content
+  field_cta_label:
+    weight: 1
+    settings:
+      size: 25
+      placeholder: ''
+    third_party_settings: {  }
+    type: text_textfield
+    region: content
+  field_cta_type:
+    weight: 3
+    settings: {  }
+    third_party_settings: {  }
+    type: options_buttons
+    region: content
+  name:
+    type: string_textfield
+    weight: 0
+    region: content
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+  path:
+    type: path
+    weight: 2
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+hidden:
+  description: true

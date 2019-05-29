@@ -1,0 +1,21 @@
+langcode: en
+status: true
+dependencies:
+  enforced:
+    module:
+      - ah_pricegrid
+  module:
+    - paragraphs
+    - text
+id: paragraph.field_center_column_copy
+field_name: field_center_column_copy
+entity_type: paragraph
+type: text_long
+settings: {  }
+module: text
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false
