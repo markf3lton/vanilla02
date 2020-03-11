@@ -676,3 +676,45 @@ if (isset($_SERVER['DEVDESKTOP_DRUPAL_SETTINGS_DIR']) && file_exists($_SERVER['D
   require $_SERVER['DEVDESKTOP_DRUPAL_SETTINGS_DIR'] . '/cld_prod_eemfelton2_dev_default.inc';
 }
 // </DDSETTINGS>
+
+
+/**
+ * @file
+ * Contains Drupal 7 Acquia memcache configuration to be added directly following the Acquia database require line
+ * (see https://docs.acquia.com/acquia-cloud/manage/code/require-line/ for more info)
+ */
+
+if (getenv('AH_SITE_ENVIRONMENT') &&
+  isset($conf['memcache_servers'])
+) {
+  $conf['memcache_extension'] = 'Memcached';
+  $conf['cache_backends'][] = 'sites/all/modules/contrib/memcache/memcache.inc';
+  $conf['cache_default_class'] = 'MemCacheDrupal';
+  $conf['cache_class_cache_form'] = 'DrupalDatabaseCache';
+
+  // Enable compression
+  $conf['memcache_options'][Memcached::OPT_COMPRESSION] = TRUE;
+
+  $conf['memcache_stampede_protection_ignore'] = array(
+  // Ignore some cids in 'cache_bootstrap'.
+  'cache_bootstrap' => array(
+    'module_implements',
+    'variables',
+    'lookup_cache',
+    'schema:runtime:*',
+    'theme_registry:runtime:*',
+    '_drupal_file_scan_cache',
+  ),
+  // Ignore all cids in the 'cache' bin starting with 'i18n:string:'
+  'cache' => array(
+    'i18n:string:*',
+  ),
+  // Disable stampede protection for the entire 'cache_path' and 'cache_rules'
+  // bins.
+  'cache_path',
+  'cache_rules',
+);
+
+# Move semaphore out of the database and into memory for performance purposes
+  $conf['lock_inc'] = 'sites/all/modules/contrib/memcache/memcache-lock.inc';
+}
