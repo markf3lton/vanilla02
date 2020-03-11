@@ -1,4 +1,0 @@
-services:
-  ah_custom_ipe.filter_ipe_blocks:
-    class: Drupal\ah_custom_ipe\FilterIpeBlocks
-    arguments: ['@entity.repository']

@@ -1,8 +1,0 @@
-ah_logoconf.content:
-  path: '/admin/config/ah_logoconf'
-  defaults:
-    
-    _form: '\Drupal\ah_logoconf\Form\AhForm'
-    _title: 'athenahealth logo settings'
-  requirements:
-    _permission: 'access content'

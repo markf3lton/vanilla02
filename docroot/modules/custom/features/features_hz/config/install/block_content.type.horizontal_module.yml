@@ -1,7 +1,0 @@
-langcode: en
-status: true
-dependencies: {  }
-id: horizontal_module
-label: 'Horizontal Module'
-revision: 1
-description: ''

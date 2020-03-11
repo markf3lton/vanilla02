@@ -1,7 +1,0 @@
-ah_services.content:
-  path: '/node/{node}/preview'
-  defaults:
-    _controller: '\Drupal\ah_services\Controller\AhServicesController::nodePreview'
-    _title: 'Preview'
-  requirements:
-    _permission: 'view latest version'

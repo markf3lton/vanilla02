@@ -1,8 +1,0 @@
-name: 'Landing Page Management - Configurations'
-type: module
-description: 'Module to install or update Landing Page Management - Configurations.'
-core: 8.x
-package: Ah Configurations
-dependencies:
-  - better_exposed_filters
-  - shs

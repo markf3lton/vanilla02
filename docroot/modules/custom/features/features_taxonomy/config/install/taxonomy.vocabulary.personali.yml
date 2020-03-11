@@ -1,8 +1,0 @@
-langcode: en
-status: true
-dependencies: {  }
-name: 'Personalized Banner Mapping'
-vid: personali
-description: ''
-hierarchy: 0
-weight: 0

@@ -1,7 +1,0 @@
-name: 'AH SEO Views Configuurations'
-type: module
-description: 'Exports SEO view configurations'
-core: 8.x
-dependencies:
-  - views
-  - views_url_alias_node

@@ -1,7 +1,0 @@
-langcode: en
-status: true
-dependencies: {  }
-id: contact_us_tabs
-label: 'Contact Us Tabs'
-revision: 1
-description: ''

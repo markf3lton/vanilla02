@@ -1,5 +1,0 @@
-name: 'AH PriceGrid Block Configurations'
-type: module
-description: 'Module to install or update price grid block configurations on the go.'
-core: 8.x
-package: Ah Configurations

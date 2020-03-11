@@ -1,5 +1,0 @@
-ahd_custom.non_drupal_url:
-  route_name: ahd_custom.non_drupal_url
-  title: 'Non Drupal links'
-  base_route: simple_sitemap.settings
-  weight: 3

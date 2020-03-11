@@ -1,8 +1,0 @@
-autocomplete:
-  js:
-    js/autocomplete.js: {}
-  css:
-    component:
-      css/autocomplete.css: {}
-  dependencies:
-   - core/drupal.autocomplete

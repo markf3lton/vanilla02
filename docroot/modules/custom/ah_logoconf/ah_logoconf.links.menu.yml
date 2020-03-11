@@ -1,6 +1,0 @@
-ah_logoconf.admin:
-  title: 'athenahealth logo settings'
-  description: 'Implements config settings page link'
-  parent: system.admin_config_development
-  route_name: ah_logoconf.content
-  weight: 100

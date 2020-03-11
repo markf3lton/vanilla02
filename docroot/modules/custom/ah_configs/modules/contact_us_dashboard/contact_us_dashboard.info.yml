@@ -1,5 +1,0 @@
-name: 'Contact Us form submission views dashboard- Configurations'
-type: module
-description: 'Module to collect and view the contact us form submission data.'
-core: 8.x
-package: Ah Configurations

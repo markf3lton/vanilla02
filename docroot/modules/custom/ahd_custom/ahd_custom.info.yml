@@ -1,6 +1,0 @@
-name: athenahealth custome module
-description: Implements Custom Functionality for ah.com.
-package: Custom
-type: module
-version: 1.0
-core: 8.x

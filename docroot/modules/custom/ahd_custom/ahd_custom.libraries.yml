@@ -1,6 +1,0 @@
-ahd.colors:
-  css:
-    layout:
-      css/ahd_colors.css: {}
-  js:
-    js/custom.js: {}

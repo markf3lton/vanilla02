@@ -1,6 +1,0 @@
-name: athenahealth config module
-description: Implements Config for ah.com.
-package: Custom
-type: module
-version: 1.0
-core: 8.x

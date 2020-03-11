@@ -1,8 +1,0 @@
-langcode: en
-status: true
-dependencies: {  }
-name: CTA
-vid: cta
-description: 'CTA Component'
-hierarchy: 0
-weight: 0

@@ -1,3 +1,0 @@
-excluded:
-  - taxonomy.vocabulary.test_
-required: true
