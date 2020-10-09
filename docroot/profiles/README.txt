@@ -1,13 +1,23 @@
 Installation profiles define additional steps that run after the base
+<<<<<<< HEAD
 installation provided by Drupal core when Drupal is first installed.
+=======
+installation of Drupal is completed. They may also offer additional
+functionality and change the behavior of the site.
+>>>>>>> 7e72eb7910eaa61a59bcbc0a67edbb7d418674db
 
 WHAT TO PLACE IN THIS DIRECTORY?
 --------------------------------
 
 Place downloaded and custom installation profiles in this directory.
+<<<<<<< HEAD
 Installation profiles are generally provided as part of a Drupal distribution.
 They only impact the installation of your site. They do not have any effect on
 an already running site.
+=======
+Note that installation profiles are generally provided as part of a Drupal
+distribution.
+>>>>>>> 7e72eb7910eaa61a59bcbc0a67edbb7d418674db
 
 DOWNLOAD ADDITIONAL DISTRIBUTIONS
 ---------------------------------

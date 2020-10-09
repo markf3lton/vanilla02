@@ -14,6 +14,7 @@
 # http://www.robotstxt.org/robotstxt.html
 
 User-agent: *
+<<<<<<< HEAD
 Crawl-delay: 10
 # CSS, JS, Images
 Allow: /misc/*.css$
@@ -32,6 +33,18 @@ Allow: /modules/*.gif
 Allow: /modules/*.jpg
 Allow: /modules/*.jpeg
 Allow: /modules/*.png
+=======
+# CSS, JS, Images
+Allow: /core/*.css$
+Allow: /core/*.css?
+Allow: /core/*.js$
+Allow: /core/*.js?
+Allow: /core/*.gif
+Allow: /core/*.jpg
+Allow: /core/*.jpeg
+Allow: /core/*.png
+Allow: /core/*.svg
+>>>>>>> 7e72eb7910eaa61a59bcbc0a67edbb7d418674db
 Allow: /profiles/*.css$
 Allow: /profiles/*.css?
 Allow: /profiles/*.js$
@@ -40,6 +53,7 @@ Allow: /profiles/*.gif
 Allow: /profiles/*.jpg
 Allow: /profiles/*.jpeg
 Allow: /profiles/*.png
+<<<<<<< HEAD
 Allow: /themes/*.css$
 Allow: /themes/*.css?
 Allow: /themes/*.js$
@@ -72,6 +86,19 @@ Disallow: /xmlrpc.php
 Disallow: /admin/
 Disallow: /comment/reply/
 Disallow: /filter/tips/
+=======
+Allow: /profiles/*.svg
+# Directories
+Disallow: /core/
+Disallow: /profiles/
+# Files
+Disallow: /README.txt
+Disallow: /web.config
+# Paths (clean URLs)
+Disallow: /admin/
+Disallow: /comment/reply/
+Disallow: /filter/tips
+>>>>>>> 7e72eb7910eaa61a59bcbc0a67edbb7d418674db
 Disallow: /node/add/
 Disallow: /search/
 Disallow: /user/register/
@@ -79,6 +106,7 @@ Disallow: /user/password/
 Disallow: /user/login/
 Disallow: /user/logout/
 # Paths (no clean URLs)
+<<<<<<< HEAD
 Disallow: /?q=admin/
 Disallow: /?q=comment/reply/
 Disallow: /?q=filter/tips/
@@ -88,3 +116,14 @@ Disallow: /?q=user/password/
 Disallow: /?q=user/register/
 Disallow: /?q=user/login/
 Disallow: /?q=user/logout/
+=======
+Disallow: /index.php/admin/
+Disallow: /index.php/comment/reply/
+Disallow: /index.php/filter/tips
+Disallow: /index.php/node/add/
+Disallow: /index.php/search/
+Disallow: /index.php/user/password/
+Disallow: /index.php/user/register/
+Disallow: /index.php/user/login/
+Disallow: /index.php/user/logout/
+>>>>>>> 7e72eb7910eaa61a59bcbc0a67edbb7d418674db

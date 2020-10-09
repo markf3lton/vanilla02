@@ -1,4 +1,5 @@
 
+<<<<<<< HEAD
 CONTENTS OF THIS FILE
 ---------------------
 
@@ -398,3 +399,7 @@ MORE INFORMATION
 - For information about the wide range of available support options, visit
   http://drupal.org and click on Community and Support in the top or bottom
   navigation.
+=======
+Please read core/INSTALL.txt for detailed installation instructions for your
+Drupal web site.
+>>>>>>> 7e72eb7910eaa61a59bcbc0a67edbb7d418674db
